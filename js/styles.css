@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(120deg, #46078a, #9916ba);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: rgba(203, 129, 243, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.weather-status {
+    animation: slide-up 1s ease;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btn-danger {
+    background-color: #8a2be2; /* Purple */
+    border-color: #8a2be2; /* Purple */
+}
+
+.btn-danger:hover {
+    background-color: #6a0dad; /* Darker Purple */
+    border-color: #6a0dad; /* Darker Purple */
+}
